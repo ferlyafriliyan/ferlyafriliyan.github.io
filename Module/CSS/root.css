@@ -1,0 +1,9 @@
+/* global variable */
+:root {
+  --lightblue: #00cef9;
+  --blue: #0099ff;
+  --transparent: rgba(0,0,0,0);
+  --pink: #d316d4 ;
+  --yellow: #f4f828;
+  --grow: #1f2425;
+}
