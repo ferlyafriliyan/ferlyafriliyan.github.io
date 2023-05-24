@@ -1,0 +1,37 @@
+/* global seting */
+/* google font cdn 'Schibsted Grotesk' */
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Schibsted Grotesk', Arial;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sub-title {
+  padding: 5px 1rem;
+}
+
+.link {
+  color: #000;
+}
+
+.link:active {
+  color: #0099ff;
+}
+
+@media only screen and (min-width: 800px) {
+  h2 {font-size: 1.8rem;}
+  h3 {font-size: 1.6rem;}
+  p {
+    font-size: 1.2em;
+  }
+}
