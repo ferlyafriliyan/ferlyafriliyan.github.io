@@ -1,0 +1,10 @@
+/* import of all css require */
+@import url('./Modules/CSS/global.css');
+@import url('./Modules/CSS/container.css');
+@import url('./Modules/CSS/nav.css');
+@import url('./Modules/CSS/hero.css');
+@import url('./Modules/CSS/project.css');
+@import url('./Modules/CSS/footer.css');
+
+
+
