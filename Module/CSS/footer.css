@@ -1,0 +1,11 @@
+@import url("root.css");
+
+.footer {
+  height: 5rem;
+  background-color: var(--grow);
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
