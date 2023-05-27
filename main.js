@@ -1,7 +1,7 @@
 // main of javascript
 
 import Nav from "./Module/JavaScript/nav-system.js";
-import candaan from "./Module/JavaScript/candaan.js";
+import candaan from "./Module/JavaScript/ApiC.js";
 import setTime from "./Module/JavaScript/time.js";
 
 const nav = new Nav("btn-navon","nav-selct","nav-selection-on");
