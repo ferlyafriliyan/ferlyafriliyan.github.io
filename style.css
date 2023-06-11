@@ -1,5 +1,3 @@
-/* Tambahkan kode CSS berikut ke dalam file style.css */
-
 .profile {
   width: 200%;
   max-width: 800px;
@@ -115,8 +113,6 @@ footer {
   color: #777;
   font-size: 14px;
 }
-
-/* Tambahkan kode CSS untuk menu hamburger */
 
 .hamburger {
   width: 30px;
