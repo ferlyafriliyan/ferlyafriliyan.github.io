@@ -1,115 +1,115 @@
 .profile {
-    width: 200%;
-    max-width: 800px;
-    background: url("Background.jpg"); no-repeat center center fixed;
-    background-size: 100% 100%;
-  }
+  width: 200%;
+  max-width: 800px;
+  background: url("Background.jpg"); no-repeat center center fixed;
+  background-size: 100% 100%;
+}
 
 .welcome-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-  .profile img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
 
-  .profile h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
-  }
+.profile h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
 
-  .profile p {
-    margin-bottom: 5px;
-  }
+.profile p {
+  margin-bottom: 5px;
+}
 
-  .profile ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-  }
+.profile ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
 
-  .profile ul li {
-    margin-bottom: 5px;
-  }
+.profile ul li {
+  margin-bottom: 5px;
+}
 
-  .profile a {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+.profile a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-  .profile a:hover {
-    text-decoration: none;
-  }
+.profile a:hover {
+  text-decoration: none;
+}
 
-  .profile a i {
-    margin-right: 5px;
-  }
+.profile a i {
+  margin-right: 5px;
+}
 
-  .profile .icon-wrapper {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    text-align: center;
-    border-radius: 50%;
-  }
+.profile .icon-wrapper {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 50%;
+}
 
-  .profile a .facebook-icon {
-    background-color: #4267B2;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
+.profile a .facebook-icon {
+  background-color: #4267B2;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
 
-  .profile a .instagram-icon {
-    background-color: #C13584;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
+.profile a .instagram-icon {
+  background-color: #C13584;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
 
-  .profile a .whatsapp-icon {
-    background-color: #25D366;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
+.profile a .whatsapp-icon {
+  background-color: #25D366;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
 
-  .profile a .github-icon {
-    background-color: #333;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
+.profile a .github-icon {
+  background-color: #333;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
 
-  footer {
-    margin-top: 20px;
-    color: #777;
-    font-size: 14px;
-  }
+footer {
+  margin-top: 20px;
+  color: #777;
+  font-size: 14px;
+}
