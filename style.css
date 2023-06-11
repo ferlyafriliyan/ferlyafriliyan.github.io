@@ -108,22 +108,6 @@
   margin-right: 5px;
 }
 
-.profile .github-link {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  text-decoration: underline;
-}
-
-.profile .github-link i {
-  margin-right: 5px;
-}
-
 footer {
   margin-top: 20px;
   color: #777;
@@ -177,4 +161,20 @@ footer {
 .links a {
   text-decoration: none;
   color: #333;
+}
+
+.profile .github-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.profile .github-link i {
+  margin-right: 5px;
 }
