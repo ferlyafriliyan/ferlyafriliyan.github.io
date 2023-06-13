@@ -1,3 +1,4 @@
+/* Code CSS */
 .profile {
   width: 200%;
   max-width: 800px;
@@ -146,19 +147,14 @@ footer {
   left: 20px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 998;
-}
-
-.links.show {
-  display: block;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .links li {
-  margin: 10px;
+  margin-bottom: 5px;
 }
 
-.links a {
-  text-decoration: none;
-  color: #333;
+.show {
+  display: block;
 }
