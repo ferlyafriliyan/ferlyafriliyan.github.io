@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;" onkeyup="return false;">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="author" content="Tahmid Rayat" />
+	<meta name="description" content="Github Portfolio of Tahmid Rayat (HTR-TECH)" />
+	<meta name="keywords" content="HTR-TECH, Tahmid Rayat, Hasan Tahmid Rayat, htrtech, tahmid.rayat, tahmidrayat" />
+	<meta name="google-site-verification" content="ggLAHp0eCN8TAsNlGhcExSYZ50Gqsy5uKJLz1evdD1k" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="FerlyXyn (Ferly Afriliyan)" />
+	<meta property="og:site_name" content="HTR-TECH | Github Portfolio" />
+	<meta property="og:url" content="https://ferlyxyn.is-a.dev" />
+	<meta property="og:description" content="Github Portfolio of Ferly Afriliyan" />
+	<meta property="og:image" content="https://ferlyxyn.is-a.dev/assets/logo.svg" />
+	<meta property="og:image:type" content="image/svg+xml" />
+	<meta itemprop="name" content="HTR-TECH" />
+	<meta itemprop="image" content="https://ferlyxyn.is-a.dev/assets/logo.svg" />
+	<meta itemprop="description" content="Github Portfolio of Tahmid Rayat" />
+	<title>HTR-TECH | Github Portfolio</title>
+	<link rel="shortcut icon" href="assets/logo.svg" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/fork-awesome.min.css">
+</head>
+
+<body>
+	<div class="counter">
+		<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FFerlyXyn%2FFerlyXyn.github.io"/>
+	</div>
+	<div id="header">
+		<img src="assets/logo.svg" />
+		<h1>Tahmid Rayat</h1>
+		<p>&#8205;<span text="Student , Programmer , Anime "></span></p>
+		<!-- https://codepen.io/hckkiu/pen/xxYbYQb -->
+		<script> 
+			var span = document.querySelector("p span"), textArr = span.getAttribute("text").split(", "), maxTextIndex = textArr.length, sPerChar = .15, sBetweenWord = 1.5, textIndex = 0; function typing(e, t) { var n = 0, r = t.length - 1, a = setInterval(function () { span.innerHTML += t[n], n == r ? (clearInterval(a), setTimeout(function () { deleting(e, t) }, 1000 * sBetweenWord)) : n += 1 }, 1000 * sPerChar) } function deleting(e, t) { var n = t.length - 1, r = setInterval(function () { span.innerHTML = t.substr(0, n), 0 == n ? (clearInterval(r), e + 1 == maxTextIndex ? e = 0 : e += 1, setTimeout(function () { typing(e, textArr[e]) }, 1000 * sBetweenWord)) : n -= 1 }, 1000 * sPerChar) } typing(textIndex, textArr[textIndex]);
+		</script>
+	</div>
+	<div id="socials">
+		<a class="link" href="https://github.com/FerlyXyn" target="_blank"><i class="fa fa-github"></i> Github</a>
+		<a class="link" href="https://facebook.com/freya.xyz" target="_blank"><i class="fa fa-facebook"></i>
+			Facebook</a>
+		<a class="link" href="https://instagram.com/afriliyanferlly_shishigami" target="_blank"><i class="fa fa-instagram"></i>
+			Instagram</a>
+	</div>
+</body>
+
+</html>
