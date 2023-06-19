@@ -1,49 +1,144 @@
 <!DOCTYPE html>
-<html oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;" onkeyup="return false;">
+<html x-data="{darkMode : false}" lang="en">
+  <head>
+    <!-- meta tag -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="author" content="Ferly Ariliyan" />
+    <meta http-equiv="refresh" content="500" />
+    <meta
+      name="keywords"
+      content="linktree, ferly afriliyan, link tree, FerlyXyn, open source. open source project"
+    />
+    <meta
+      name="description"
+      content="custom linktree using alpinejs for interactive iu"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" :content="(darkMode)? '#202020' : '#fff';" />
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	<meta name="author" content="Ferly Afriliyan" />
-	<meta name="description" content="Github Portfolio of Ferly Afriliyan (FerlyXyn)" />
-	<meta name="keywords" content="Ferly Afriliyan, FerlyXyn, Freya Jayawardana Adityaningsih, ferlyxyn, afriliyanferlly_shishigami, freya.xyz" />
-	<meta name="google-site-verification" content="ggLAHp0eCN8TAsNlGhcExSYZ50Gqsy5uKJLz1evdD1k" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:title" content="FerlyXyn (Ferly Afriliyan)" />
-	<meta property="og:site_name" content="Ferly Xyn | Github Portfolio" />
-	<meta property="og:url" content="https://ferlyxyn.is-a.dev" />
-	<meta property="og:description" content="Github Portfolio of ferlyxyn" />
-	<meta property="og:image" content="https://ferlyxyn.is-a.dev/assets/My-Profile.jpg" />
-	<meta property="og:image:type" content="image/svg+xml" />
-	<meta itemprop="name" content="Ferly Afriliyan" />
-	<meta itemprop="image" content="https://ferlyxyn.is-a.dev/assets/My-Profile.jpg" />
-	<meta itemprop="description" content="Github Portfolio of ferlyxyn" />
-	<title>FerlyXyn | Github Portfolio</title>
-	<link rel="shortcut icon" href="assets/My-Profile.jpg" />
-	<link rel="stylesheet" href="assets/style.css">
-	<link rel="stylesheet" href="assets/fork-awesome.min.css">
-</head>
+    <!-- fav icon -->
+    <link rel="icon" href="" type="image/x-icon" />
 
-<body>
-	<div class="counter">
-		<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FFerlyXyn%2FFerlyXyn.github.io"/>
-	</div>
-	<div id="header">
-		<img src="assets/My-Profile.jpg" />
-		<h1>Tahmid Rayat</h1>
-		<p>&#8205;<span text="Student , Programmer , Anime "></span></p>
-		<!-- https://codepen.io/hckkiu/pen/xxYbYQb -->
-		<script> 
-			var span = document.querySelector("p span"), textArr = span.getAttribute("text").split(", "), maxTextIndex = textArr.length, sPerChar = .15, sBetweenWord = 1.5, textIndex = 0; function typing(e, t) { var n = 0, r = t.length - 1, a = setInterval(function () { span.innerHTML += t[n], n == r ? (clearInterval(a), setTimeout(function () { deleting(e, t) }, 1000 * sBetweenWord)) : n += 1 }, 1000 * sPerChar) } function deleting(e, t) { var n = t.length - 1, r = setInterval(function () { span.innerHTML = t.substr(0, n), 0 == n ? (clearInterval(r), e + 1 == maxTextIndex ? e = 0 : e += 1, setTimeout(function () { typing(e, textArr[e]) }, 1000 * sBetweenWord)) : n -= 1 }, 1000 * sPerChar) } typing(textIndex, textArr[textIndex]);
-		</script>
-	</div>
-	<div id="socials">
-		<a class="link" href="https://github.com/FerlyXyn" target="_blank"><i class="fa fa-github"></i> Github</a>
-		<a class="link" href="https://facebook.com/freya.xyz" target="_blank"><i class="fa fa-facebook"></i>
-			Facebook</a>
-		<a class="link" href="https://instagram.com/afriliyanferlly_shishigami" target="_blank"><i class="fa fa-instagram"></i>
-			Instagram</a>
-	</div>
-</body>
+    <!-- library -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.2/cdn.js"
+      integrity="sha512-O+ameuymZr7auqNl/HvUtOOzIMFEB9wwMLAYe3k/clA44a2oGtV+6Xh7+lFiztz0gBN+t27z23xxQQLG67vv9w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+
+    <!-- title -->
+    <title>arya dewa | inktree</title>
+  </head>
+  <body>
+    <!-- container -->
+    <div :class="(darkMode)? 'dark' : '';" class="container">
+      <div>
+        <!--header-->
+        <header class="header">
+          <!--navbar-->
+          <nav class="navbar">
+            <h1 class="logo">Avs4x-Dvanmeploph</h1>
+            <div>
+              <button
+                @click="darkMode = !darkMode"
+                x-show="!darkMode"
+                x-transition.duration.200ms
+                class="change-mode icon-m"
+              >
+                <li data-feather="moon"></li>
+              </button>
+              <button
+                @click="darkMode = !darkMode"
+                x-show="darkMode"
+                x-transition.duration.200ms
+                class="change-mode icon-m"
+              >
+                <li data-feather="sun"></li>
+              </button>
+            </div>
+          </nav>
+          <!--end navbar-->
+        </header>
+        <!--end header-->
+
+        <!--main-->
+        <main class="main">
+          <section :class="(darkMode)? 'dark' : '';" class="link-section">
+            <ul class="link-list">
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
+                <a
+                  :class="(darkMode)? 'dark' : 'light';"
+                  href="https://www.facebook.com/freya.xyz"
+                >
+                  <i data-feather="facebook"></i>
+                  <span>facebook</span>
+                </a>
+              </li>
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
+                <a
+                  :class="(darkMode)? 'dark' : 'light';"
+                  href="https://www.instagram.com/afriliyanferlly_shishigami/?hl=id"
+                >
+                  <i data-feather="instagram"></i>
+                  <span>instagram</span>
+                </a>
+              </li>
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
+                <a
+                  :class="(darkMode)? 'dark' : 'light';"
+                  href="https://github.com/FerlyXyn"
+                >
+                  <i data-feather="github"></i>
+                  <span>github</span>
+                </a>
+              </li>
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
+                <a
+                  :class="(darkMode)? 'dark' : 'light';"
+                  href="https://wa.me/+62888888888888"
+                >
+                  <i data-feather="phone"></i>
+                  <span>whatsapp</span>
+                </a>
+              </li>
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
+                <a
+                  :class="(darkMode)? 'dark' : 'light';"
+                  href="https://FerlyXyn.github.io/"
+                >
+                  <i data-feather="user"></i>
+                  <span>portfolio</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </main>
+        <!--end main-->
+      </div>
+      <!---->
+      <div>
+        <!--footer-->
+        <footer class="footer">
+          <p :class="(darkMode)? 'dark' : '';">
+            &copy;Ferly Afriliyan <span>04</span>
+          </p>
+          <p :class="(darkMode)? 'dark' : '';">see on <span>github</span></p>
+        </footer>
+        <!--end footer-->
+      </div>
+    </div>
+
+    <!-- custom script -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
