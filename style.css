@@ -118,4 +118,43 @@ body {
     margin-top: 10px;
 }
 
-/* Dashboard and Profile sections styles can be added similarly */
+/* Profile Section styles */
+.profile {
+    background-color: #333;
+    color: white;
+    padding: 80px 0;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-bio {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+/* Dashboard and other sections styles can be added similarly */
