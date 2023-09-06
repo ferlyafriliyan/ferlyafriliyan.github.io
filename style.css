@@ -1,165 +1,121 @@
-/* Code CSS */
-.profile {
-  width: 200%;
-  max-width: 800px;
-  background: url("Background.jpg") no-repeat center center fixed;
-  background-size: 100% 100%;
+/* styles.css */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.welcome-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  font-size: 25px;
-  margin-bottom: 20px;
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.profile img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
-.profile h2 {
-  font-size: 34px;
-  margin-bottom: 10px;
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.profile p {
-  margin-bottom: 5px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.profile ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
+.nav-links {
+    list-style: none;
+    display: flex;
 }
 
-.profile ul li {
-  margin-bottom: 5px;
+.nav-links li {
+    margin-right: 20px;
 }
 
-.profile a {
-  color: #333;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  text-decoration: underline;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.profile a:hover {
-  text-decoration: none;
+/* Hero Section styles */
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
 }
 
-.profile a i {
-  margin-right: 5px;
+.hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.profile .icon-wrapper {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  text-align: center;
-  border-radius: 50%;
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
-.profile a .facebook-icon {
-  background-color: #4267B2;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+.btn {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.profile a .instagram-icon {
-  background-color: #C13584;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+.btn:hover {
+    background-color: #FF2F00;
 }
 
-.profile a .whatsapp-icon {
-  background-color: #25D366;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+/* Projects Section styles */
+.projects {
+    background-color: #f4f4f4;
+    padding: 80px 0;
 }
 
-.profile a .github-icon {
-  background-color: #333;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 
-footer {
-  margin-top: 20px;
-  color: #777;
-  font-size: 14px;
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.hamburger {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-  z-index: 999;
+.project-card img {
+    max-width: 100%;
 }
 
-.hamburger .line {
-  width: 100%;
-  height: 2px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: all 0.3s ease;
+.project-title {
+    font-size: 24px;
+    margin-top: 20px;
 }
 
-.container {
-  position: relative;
+.project-description {
+    font-size: 16px;
+    margin-top: 10px;
 }
 
-.links {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 80px;
-  left: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 998;
-}
-
-.links.show {
-  display: block;
-}
-
-.links li {
-  margin: 10px;
-}
-
-.links a {
-  text-decoration: none;
-  color: #333;
-}
+/* Dashboard and Profile sections styles can be added similarly */
